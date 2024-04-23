@@ -1,5 +1,5 @@
 # Book Review Application
-## By Funmi Idowu
+### By Funmi Idowu
 
 ## Project Proposal
 
