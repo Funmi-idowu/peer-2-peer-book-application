@@ -2,6 +2,8 @@
   {
     "id": 0,
     "title": "She's Gone",
+    "genre": "Mystery, Thriller, Yound Adult, Fiction, Suspense, Crime",
+    "author": "David Bell",
     "rating": "3.66/5",
     "review": "This is a gripping psychological thriller that keeps readers guessing until the very end. When college professor Nick Hansen's wife disappears, he delves into her mysterious past, uncovering dark secrets that threaten to unravel his life. With its fast-paced plot and well-developed characters, Bell crafts a riveting narrative filled with unexpected twists and turns",
     "public": true
@@ -9,6 +11,8 @@
   {
     "id": 1,
     "title": "They Both Die at the End",
+    "genre": "Yound Adult, Romance, Contemporary, Science Fiction",
+    "author": "Adam Silvera",
     "rating": "3.77/5",
     "review": "This is a heart-wrenching tale that explores love, loss, and the meaning of life in the face of death. Set in a world where people receive a call on the day they're going to die, the story follows Mateo and Rufus, two strangers who connect through an app called Last Friend on their End Day. As they embark on a journey to live their last day to the fullest, their bond deepens, and they confront their fears and regrets. Silvera's poignant storytelling and authentic characters make 'They Both Die at the End' a profound and unforgettable read that will stay with readers long after they turn the final page.",
     "public": true
@@ -16,6 +20,8 @@
   {
     "id": 2,
     "title": "Normal People",
+    "genre": "Fiction, Romance, Contemporary, Coming of Age",
+    "author": "Sally Rooney",
     "rating": "3.81/5",
     "review": "This is a compelling exploration of love and friendship between Connell and Marianne, two Irish teenagers from different backgrounds. Rooney's insightful writing delves into their complex relationship as they navigate the challenges of adulthood, class, and mental health. Through its raw portrayal of intimacy, the novel offers a poignant reflection on the dynamics that shape us.",
     "public": true
@@ -23,15 +29,19 @@
   {
     "id": 3,
     "title": "The Best Way to Bury Your Husband",
+    "genre": "Mystery, Thriller, FIction, Cozy Mystery",
+    "author": "Alexia Casale",
     "rating": "3.84/5",
     "review": "This is a darkly humorous and thought-provoking novel that takes readers on a wild ride through the absurdities of grief and redemption. When protagonist Jane's husband unexpectedly dies, she finds herself navigating the complexities of loss while dealing with a quirky cast of characters and unexpected twists. Casale's witty prose and sharp observations illuminate the absurdity of death and the human condition, offering a refreshing take on the mourning process. With its blend of dark humor and heartfelt moments, 'The Best Way to Bury Your Husband' is a captivating read that will leave readers pondering the meaning of life, death, and everything in between.",
     "public": true
   },
   {
     "id": 4,
-    "title": " bikf",
-    "rating": "skhd",
-    "review": "skjdb",
+    "title": "Five Survive",
+    "genre": "Mystery, Thriller, Young Adult, Myster Thriller, Fiction",
+    "author": "Holly Jackson",
+    "rating": "4.08/5",
+    "review": "This is a gripping young adult thriller that keeps readers on the edge of their seats from start to finish. Set in a remote cabin in the woods, the story follows five friends who gather for a weekend getaway but find themselves facing a nightmare scenario when a blizzard traps them inside with no way to communicate with the outside world. As tensions rise and secrets are revealed, the group must confront their darkest fears and fight to survive against an unknown threat lurking in the shadows. Jackson masterfully builds suspense with each twist and turn, keeping readers guessing until the final page. The characters are vividly drawn, each with their own motivations and secrets, adding layers of complexity to the gripping plot. As the storm rages outside and paranoia mounts within, 'Five Survive' explores themes of trust, betrayal, and the lengths people will go to in order to survive.",
     "public": false
   }
 ]

@@ -166,6 +166,19 @@ async fn create_new_book(title: &str, genre: &str, author: &str, rating: &str, r
     Ok(())
 }
 
+async fn delete_book_review(id: usize) -> Result<()> {
+    let mut local_books = read_local_books().await?;
+    if let Some(index) = local_books.iter().position(|book| book.id == id) {
+        local_books.remove(index);
+        write_local_books(&local_books).await?;
+        Ok(())
+    } else {
+        Err("Book review not found".into())
+    }
+}
+
+
+
 async fn publish_book(id: usize) -> Result<()> {
     let mut local_books = read_local_books().await?;
     local_books
@@ -257,6 +270,7 @@ async fn main() {
                     cmd if cmd.starts_with("list reviews") => handle_list_reviews(cmd, &mut swarm).await,
                     cmd if cmd.starts_with("create review") => handle_create_book_review(cmd).await,
                     cmd if cmd.starts_with("publish review") => handle_publish_book_review(cmd).await,
+                    cmd if cmd.starts_with("delete review") => handle_delete_book_review(cmd).await,
                     _ => error!("unknown command"),
                 },
             }
@@ -326,6 +340,23 @@ async fn handle_create_book_review(cmd: &str) {
         }
     }
 }
+
+async fn handle_delete_book_review(cmd: &str) {
+    if let Some(rest) = cmd.strip_prefix("delete review") {
+        match rest.trim().parse::<usize>() {
+            Ok(id) => {
+                if let Err(e) = delete_book_review(id).await {
+                    error!("error deleting book review with id {}: {}", id, e);
+                } else {
+                    info!("Deleted book review with id: {}", id);
+                }
+            }
+            Err(e) => error!("invalid id: {}, {}", rest.trim(), e),
+        };
+    }
+}
+
+
 
 async fn handle_publish_book_review(cmd: &str) {
     if let Some(rest) = cmd.strip_prefix("publish review") {
